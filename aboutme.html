@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Syahirah's Here! - Personal Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Courier New", Monospace;
+	    background-color: #D4C8BE;
+            color: #333;
+        }
+
+        header {
+    	    background-color: transparent;
+            color: #8B4513;
+            text-align: center;
+            padding: 1em;
+            background-image: url('yourday.jpg');
+            background-repeat: no-repeat;
+  	    background-attachment: fixed;  
+ 	    background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1em;
+	    background-color: #D4C8BE; 
+        }
+
+        nav a {
+            color: #8B4513;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #A39886;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+        }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("aboutmebannerone.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("me.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("me2.jpg");
+  min-height: 400px;
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url('aboutmebannerone.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: "Courier New", Monospace;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 5px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+        footer {
+            text-align: left;
+            padding: 1em;
+            background-color: #A39886;
+            color: #fff;
+        }
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-whatsapp { 
+   color: white;
+}
+
+.fa-envelope {
+  color: white;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Syahirah's Club</h1>
+        <p>Welcome to my personal website!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="educations.html">Educations</a>
+        <a href="family.html">Family</a>
+        <a href="friends.html">Friends</a>
+        <a href="interests.html">Interests</a>
+    </nav>
+
+<div class="parallax"></div>
+
+  <div class="caption">
+  <span class="border"></span>
+  </div>
+</div>
+
+<div style="color: black;background-color:#D4C8BE;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">hello, I'm Syahirah or call me caa instead can you?</h3>
+  <p>On the 25 June 2003, a pair of beautiful and sweet girls were born. Nur Syahirah and Nur Sabrina were the name given after registering the birth certificate at the Petaling Jaya National Registration Department. I'm the older sister and ina (sabrina) is the younger sister. The twins and I were born at the University Malaya Medical Center (PPUM) accompanied by my father and also his collegues came to visit because they both worked at the university. </p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color: white;background-color:#A39886;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>What I want to tell you is that all sweet childhood memories are the most precious memories for me because of my beloved parents. However, the happy times did not last forever as dreamed. My parents separated when I was 3 or 4 years old probably because my memory is not strong enough to remember those dark memories. Fortunately, my father told me when I was an adult and the wounds gradually healed over time.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color: black;background-color:#D4C8BE;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>I was born in the state of the federal territory and lived only for  short period of time because my father's office moved to the branch of the University of Malaya in Kelantan, but there it was specifically for Islamic studies academics. Overall I grew up in Kelantan with my other siblings. In these siblings, starting with my third brother up to my twin who was born in the city state. While the eldest and second were born in Kelantan. From the beginning, my family moved around because of my father's job change. After all, my father's hometown is in Kelantan so maybe that's the main reason haha.</p>
+  </div>
+</div>
+
+
+<div class="parallax"></div>
+<br>
+<h2 style="text-align:center">Random Memories Photos</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="jambatanpelangi.jpg" style="width:90%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="rayauitm2023cover.jpg" style="width:90%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="electiontrial.jpg" style="width:90%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="birthdaytwinss.jpg" style="width:90%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="bunga.jpg" style="width:90%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="colorzumba.jpg" style="width:90%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="culturestreet.jpg" style="width:90%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="outing.jpg" style="width:90%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="jambatanpelangis.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="rayauitm2023.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="electiontrialtwo.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="birthdaytwins.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="mybunga.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="colorzumbame.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="culturestreets.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="kualaperlis.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="jambatanpelangis.jpg" style="width:100%" onclick="currentSlide(1)" alt="Jambatan Pelangi di Restoran Terapung Segantang Garam">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rayauitm2023.jpg" style="width:100%" onclick="currentSlide(2)" alt="Raya UiTM 2023">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="electiontrialtwo.jpg" style="width:100%" onclick="currentSlide(3)" alt="Election Trial at 18">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="birthdaytwins.jpg" style="width:100%" onclick="currentSlide(4)" alt="on birthday we wear white">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="mybunga.jpg" style="width:100%" onclick="currentSlide(5)" alt="My most-liked flower - White rose">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="colorzumbame.jpg" style="width:100%" onclick="currentSlide(6)" alt="Color Zumba at Stadium Mini">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="culturestreets.jpg" style="width:100%" onclick="currentSlide(7)" alt="cultural route in the city of Kota Bharu">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="kualaperlis.jpg" style="width:100%" onclick="currentSlide(8)" alt="Kuala Perlis to Penang">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br>
+<br>
+<br>
+    <footer>
+
+<h2>Let's connect with me via :</h2>
+
+<!-- Add font awesome icons -->
+<a href="https://www.instagram.com/nsyahgwj/" class="fa fa-instagram"></a>
+<a href="https://x.com/ariellesyav?t=6ziLwX01eNm8YSgn51sfTg&s=35" class="fa fa-twitter"></a>
+<a href="https://wa.link/72dgqc" class="fa fa-whatsapp"></a>
+<a href="lunaiesyaaisy@gmail.com" class="fa fa-envelope"></a>
+
+
+        <center><p>&copy; 2023 Syahirah's Club. All rights reserved.</p></center>
+    </footer>
+
+</body>
+</html>
